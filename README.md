@@ -1,7 +1,7 @@
 :rainbow: Color Console
 =======================
 
-Augment built-in `console` logging function to output with severity-specific colors.
+Augment `console` logging functions to output with severity-specific colors.
 
 Includes additions for logging without newlines.
 
@@ -20,20 +20,20 @@ Usage
 require('color-console')
 
 console.debug("👀 For developers only")
-console.log("🙈 Don't pay much attention to me")
+console.log("🙈 Don't pay attention to me")
 console.info("👍 Things are going fine")
 console.warn("⚡ I hope you know what you're doing")
 console.error("🔥 Something went very wrong")
 console.success("✅ Successful completion!")
 
 console.part.info("⏳ For when you're waiting...")
-console.info("And then you're done!⌛")
+console.info("And then you're done ⌛")
 ```
 
 Output
 ------
 
-![output.png](https://i.imgur.com/3yZ5NWM.png)
+![output.png](https://i.imgur.com/3MbdAkt.png)
 
 Credits
 -------
