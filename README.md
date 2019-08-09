@@ -1,4 +1,4 @@
-:rainbow: Color Console
+:rainbow: Fresh Console
 =======================
 
 Augment `console` logging functions to output with severity-specific colors.
@@ -11,7 +11,7 @@ Installation
 ------------
 
 ```sh
-npm install color-console
+npm install fresh-console
 ```
 
 Usage

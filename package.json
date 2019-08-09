@@ -1,7 +1,7 @@
 {
-  "name": "color-console",
-  "version": "1.0.0",
-  "description": "Console override with colored and partial output",
+  "name": "fresh-console",
+  "version": "1.0.1",
+  "description": "Colored console override with partial output support",
   "main": "index.js",
   "keywords": [
     "colors",
@@ -13,9 +13,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/foxxyz/color-console.git"
+    "url": "git+https://github.com/foxxyz/fresh-console.git"
   },
-  "homepage": "https://github.com/foxxyz/color-console",
+  "homepage": "https://github.com/foxxyz/fresh-console",
   "author": "Ivo Janssen <hello@ivo.la>",
   "license": "MIT"
 }
