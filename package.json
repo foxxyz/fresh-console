@@ -1,0 +1,20 @@
+{
+  "name": "color-console",
+  "version": "1.0.0",
+  "description": "Console override with colored and partial output",
+  "main": "index.js",
+  "keywords": [
+    "colors",
+    "console",
+    "color",
+    "log",
+    "logging",
+    "console.log"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/foxxyz/color-console"
+  },
+  "author": "Ivo Janssen <hello@ivo.la>",
+  "license": "MIT"
+}
