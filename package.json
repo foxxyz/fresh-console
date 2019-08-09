@@ -13,8 +13,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/foxxyz/color-console"
+    "url": "git+https://github.com/foxxyz/color-console.git"
   },
+  "homepage": "https://github.com/foxxyz/color-console",
   "author": "Ivo Janssen <hello@ivo.la>",
   "license": "MIT"
 }
