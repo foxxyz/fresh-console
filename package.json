@@ -9,7 +9,9 @@
     "color",
     "log",
     "logging",
-    "console.log"
+    "console.log",
+    "fresh",
+    "partial"
   ],
   "repository": {
     "type": "git",

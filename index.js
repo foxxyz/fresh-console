@@ -1,10 +1,5 @@
 const stdout = process.stdout
 
-const info = console.info
-const warn = console.warn
-const error = console.error
-const log = console.log
-
 const DEFAULT = "\033[m"
 const BLUE = "\033[1;36m"
 const GREEN = "\033[1;92m"
@@ -19,7 +14,7 @@ function colored(augment, color) {
 }
 
 console.debug = colored.bind(this, console.debug, GREY)
-console.info = colored.bind(this, info, BLUE)
+console.info = colored.bind(this, console.info, BLUE)
 console.success = colored.bind(this, console.log, GREEN)
 console.warn = colored.bind(this, console.warn, YELLOW)
 console.error = colored.bind(this, console.error, RED)
