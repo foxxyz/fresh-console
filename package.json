@@ -6,6 +6,9 @@
   "scripts": {
     "lint": "eslint ."
   },
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "colors",
     "console",
