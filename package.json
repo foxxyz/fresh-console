@@ -3,6 +3,9 @@
   "version": "1.0.2",
   "description": "Colored console override with partial output support",
   "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
   "keywords": [
     "colors",
     "console",
@@ -19,5 +22,17 @@
   },
   "homepage": "https://github.com/foxxyz/fresh-console",
   "author": "Ivo Janssen <hello@ivo.la>",
-  "license": "MIT"
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": [
+      "@appliedminds"
+    ],
+    "rules": {
+      "no-console": "off"
+    }
+  },
+  "devDependencies": {
+    "@appliedminds/eslint-config": "^1.1.1",
+    "eslint": "^8.7.0"
+  }
 }
