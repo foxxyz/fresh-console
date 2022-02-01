@@ -1,15 +1,15 @@
 const stdout = process.stdout
 
-const DEFAULT = "\033[m"
-const BLUE = "\033[1;36m"
-const GREEN = "\033[1;92m"
-const GREY = "\033[1;90m"
-const YELLOW = "\033[1;33m"
-const RED = "\033[1;91m"
+const DEFAULT = '\x1b[m'
+const BLUE = '\x1b[1;36m'
+const GREEN = '\x1b[1;92m'
+const GREY = '\x1b[1;90m'
+const YELLOW = '\x1b[1;33m'
+const RED = '\x1b[1;91m'
 
-function colored(augment, color) {
+function colored(augment, color, ...args) {
     stdout.write(color)
-    augment.apply(this, Array.prototype.slice.call(arguments, 2))
+    augment.apply(this, args)
     stdout.write(DEFAULT)
 }
 
@@ -20,12 +20,24 @@ console.warn = colored.bind(this, console.warn, YELLOW)
 console.error = colored.bind(this, console.error, RED)
 
 console.part = {
-    debug() { stdout.write(`${GRAY}${[...arguments].join(' ')}${DEFAULT}`) },
-    error() { stdout.write(`${RED}${[...arguments].join(' ')}${DEFAULT}`) },
-    log() { stdout.write([...arguments].join(' ')) },
-    info() { stdout.write(`${BLUE}${[...arguments].join(' ')}${DEFAULT}`) },
-    success() { stdout.write(`${GREEN}${[...arguments].join(' ')}${DEFAULT}`) },
-    warn() { stdout.write(`${YELLOW}${[...arguments].join(' ')}${DEFAULT}`) }
+    debug(...args) {
+        stdout.write(`${GREY}${args.join(' ')}${DEFAULT}`)
+    },
+    error(...args) {
+        stdout.write(`${RED}${args.join(' ')}${DEFAULT}`)
+    },
+    log(...args) {
+        stdout.write(args.join(' '))
+    },
+    info(...args) {
+        stdout.write(`${BLUE}${args.join(' ')}${DEFAULT}`)
+    },
+    success(...args) {
+        stdout.write(`${GREEN}${args.join(' ')}${DEFAULT}`)
+    },
+    warn(...args) {
+        stdout.write(`${YELLOW}${args.join(' ')}${DEFAULT}`)
+    }
 }
 
 module.exports = console
