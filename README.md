@@ -17,7 +17,7 @@ npm install fresh-console
 Usage
 -----
 ```javascript
-require('fresh-console')
+import 'fresh-console'
 
 console.debug("👀 For developers only")
 console.log("🙈 Don't pay attention to me")
