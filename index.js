@@ -20,24 +20,12 @@ console.warn = colored.bind(this, console.warn, YELLOW)
 console.error = colored.bind(this, console.error, RED)
 
 console.part = {
-    debug(...args) {
-        stdout.write(`${GREY}${args.join(' ')}${DEFAULT}`)
-    },
-    error(...args) {
-        stdout.write(`${RED}${args.join(' ')}${DEFAULT}`)
-    },
-    log(...args) {
-        stdout.write(args.join(' '))
-    },
-    info(...args) {
-        stdout.write(`${BLUE}${args.join(' ')}${DEFAULT}`)
-    },
-    success(...args) {
-        stdout.write(`${GREEN}${args.join(' ')}${DEFAULT}`)
-    },
-    warn(...args) {
-        stdout.write(`${YELLOW}${args.join(' ')}${DEFAULT}`)
-    }
+    debug: colored.bind(stdout, stdout.write, GREY),
+    error: colored.bind(stdout, stdout.write, RED),
+    log: colored.bind(stdout, stdout.write, DEFAULT),
+    info: colored.bind(stdout, stdout.write, BLUE),
+    success: colored.bind(stdout, stdout.write, GREEN),
+    warn: colored.bind(stdout, stdout.write, YELLOW),
 }
 
-module.exports = console
+export default console

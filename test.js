@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-require('.')
+import './index.js'
 
 console.debug('👀 For developers only')
 console.log('🙈 Don\'t pay attention to me')

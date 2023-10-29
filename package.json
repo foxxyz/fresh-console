@@ -7,6 +7,7 @@
     "lint": "eslint .",
     "test": "node ./test.js"
   },
+  "type": "module",
   "files": [
     "index.js"
   ],
