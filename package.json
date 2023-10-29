@@ -36,7 +36,7 @@
     }
   },
   "devDependencies": {
-    "@appliedminds/eslint-config": "^1.3.0",
-    "eslint": "^8.20.0"
+    "@appliedminds/eslint-config": "^1.6.0",
+    "eslint": "^8.52.0"
   }
 }
