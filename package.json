@@ -1,6 +1,6 @@
 {
   "name": "fresh-console",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Colored console override with partial output support",
   "main": "index.js",
   "scripts": {
